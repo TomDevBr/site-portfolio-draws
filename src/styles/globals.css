@@ -1,0 +1,28 @@
+:root {
+ --side-bar: #1C4E59;
+ --back-ground: #D9D3C7;
+ --text-menu: #D9D3C7;
+ --text: #000;
+ --title: #C7CFD9;
+ --separator: #35748C;
+
+
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family:  acumin-pro, monospace, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--back-ground);
+  width: 100vw;
+  height: 100vh;
+
+  
+}

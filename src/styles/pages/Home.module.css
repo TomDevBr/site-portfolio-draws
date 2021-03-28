@@ -1,0 +1,246 @@
+.container{
+    display: grid;
+    width: 100%;
+  
+}
+
+.main {
+    padding-left: 20%;
+    /* Same as the width of the sidebar */
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "sobre photo"
+    "contact contact";
+}
+
+.title {
+    font-family: flood-std,
+    sans-serif;
+    font-weight: 400;
+    font-size: 6rem;
+    font-style: normal;
+    color: var(--text);
+    margin-bottom: 3rem;
+    cursor: pointer;
+    display: grid;
+    justify-content: center;
+    padding:0.5rem;
+    grid-area: title;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--side-bar);
+    opacity: 1;
+}
+
+
+.sobre {
+    grid-area: sobre;
+    margin-left: 3rem;
+    font-family: acumin-pro,
+    sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+}
+
+.sobre h2 {
+      font-family: flood-std,
+      sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 3rem;
+      margin-bottom: 0.9rem;
+}
+
+.sobre h2::after {
+    content: "";
+    display: block;
+    width: 45%;
+    height: 3px;
+    background-color: var(--side-bar);
+    opacity: 1;
+}
+
+
+
+
+.photo {
+    grid-area: photo;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    
+}
+
+.photo img {
+     width: 100%;
+     max-width: 500px;
+     height: auto;
+}
+
+.contact {
+     font-family: acumin-pro,
+     sans-serif;
+     font-weight: 500;
+     font-size: 1.5rem;
+     font-style: normal;
+     padding: 1rem;
+     margin-left: 2rem;
+}
+.contact p {
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 600px)  {
+.main {
+    padding-left: 0;
+    margin-left: 0;
+   padding-top: 2rem;
+    /* Same as the width of the sidebar */
+    display: grid;
+    grid-template-areas:
+        "sobre sobre"
+        "contact contact"
+        "photo photo";
+
+}
+
+.title {
+    display: none;
+}
+
+.photo {
+    margin: 0 auto;
+}
+
+
+.contact {
+  display: grid;
+  align-items: start;
+  justify-items: start;
+  margin-left: 0;
+  font-size: 1.0rem;
+  margin-left: 0rem;
+
+}
+
+.sobre {
+    display: grid;
+    align-items: start;
+    justify-items: start;
+
+    margin-left: 1.0rem;
+    font-size: 1.3rem;
+}
+
+   
+}
+
+@media screen and (max-width: 768px) and (min-width: 601px) {
+    .main {
+        padding-left: 20%;
+        /* Same as the width of the sidebar */
+        display: grid;
+        grid-template-areas:
+            "title title"
+            
+            "sobre sobre"
+            "contact contact"
+            "photo photo"
+            ;
+
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    
+    
+    .photo {
+        grid-area: photo;
+        justify-self: center;
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    .photo img {
+        width: 400px;
+        height: 400px;
+    }
+
+  .contact {
+      display: grid;
+      align-items: start;
+      justify-items: start;
+      margin-left: 0;
+      font-size: 1.0rem;
+      margin-left: 2rem;
+
+  }
+
+    .sobre {
+        justify-self: center;
+        align-self: center;
+        margin-left: 3rem;
+        font-size: 1.5rem;
+    }
+
+
+}
+
+@media screen and (max-width:1100px) and (min-width:769px) {
+    .main {
+        padding-left: 20%;
+
+        /* Same as the width of the sidebar */
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "sobre sobre"
+            "contact contact"
+            "photo photo"
+            ;
+
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+
+
+    .photo {
+        grid-area: photo;
+        justify-self: center;
+        align-self: center;
+        margin: 0 auto;
+       
+    
+    }
+
+  .contact {
+      display: grid;
+      align-items: start;
+      justify-items: start;
+      margin-left: 0;
+      font-size: 1.0rem;
+      margin-left: 2rem;
+
+  }
+
+    .sobre {
+        justify-self: center;
+        align-self: center;
+        margin-left: 3rem;
+        font-size: 1.5rem;
+    }
+
+
+}
+

@@ -1,0 +1,58 @@
+.sideBar {
+     height: 100%;
+     width: 20%;
+     position: fixed;
+
+     top: 0;
+     left: 0;
+     background: var(--side-bar) ;
+     overflow-x: none;
+     padding-top: 1rem;
+}
+
+
+
+.sideBar h1:hover {
+    color: var(--separator);
+}
+
+.sideBar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--text-menu);
+    display: block;
+    align-self: center;
+}
+.sideBar a:hover {
+    color: var(--separator);
+}
+
+.sideBar a::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: var(--separator);
+      opacity: 0.4;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .sideBar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        
+        
+    }
+
+    .sideBar a {
+        font-size:3rem;
+        align-self: center;
+    }
+}
